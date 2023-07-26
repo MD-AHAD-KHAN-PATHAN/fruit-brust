@@ -26,7 +26,7 @@
           theme: {
             extend: {
               colors: {
-                'gradient-start': '#FF8938',
+                'nav-color': '#F85559',
                 'gradient-end' : '#F00',
               }
             }
@@ -42,8 +42,39 @@
 
 </head>
 <body class="font-lato">
-    <header>
-
+    <header class="container mx-auto">
+        <!-----        Navbar      ----->
+        <div class="navbar lg:bg-nav-color rounded-full">
+            <div class="navbar-start hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 lg:text-white font-medium">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            <div class="navbar-center">
+              
+              <img src="images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-xl lg:text-white">Fruit Burst</a>
+              <div class="dropdown navbar-end">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="navbar-end p-3">
+                <input type="text" placeholder="Search here" class="input input-ghost w-full max-w-xs bg-white rounded-full"/>
+                <i class="fa-solid fa-magnifying-glass relative -left-8"></i>
+            </div>
+          </div>
     </header>
 
     <main>
