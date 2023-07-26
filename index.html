@@ -27,7 +27,7 @@
             extend: {
               colors: {
                 'nav-color': '#F85559',
-                'gradient-end' : '#F00',
+                'slider-fill' : '#121212',
               }
             }
           }
@@ -40,11 +40,14 @@
         }
     </style>
 
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body class="font-lato">
-    <header class="container mx-auto">
+    <header class="container mx-auto px-6 lg:px-20">
         <!-----        Navbar      ----->
         <div class="navbar lg:bg-nav-color rounded-full">
+             <!-----        Navbar start      ----->
             <div class="navbar-start hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 lg:text-white font-medium">
                   <li><a>Home</a></li>
@@ -52,32 +55,182 @@
                   <li><a>Shop</a></li>
                   <li><a>All Fruits</a></li>
                 </ul>
-              </div>
-            <div class="navbar-center">
-              
+            </div>
+
+             <!-----        Navbar center      ----->
+            <div class="navbr-center">
               <img src="images/logo.png" alt="">
               <a class="btn btn-ghost normal-case text-xl lg:text-white">Fruit Burst</a>
-              <div class="dropdown navbar-end">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                </ul>
-              </div>
+            </div>
+
+             <!-----        Navbar end      ----->
+            <div class="navbar-end">
+                    <input type="text" placeholder="Search here" class="input input-ghost w-full max-w-xs bg-white rounded-full"/>
+                    <i class="fa-solid fa-magnifying-glass relative -left-8"></i>
+                
+                <div class="dropdown navbar-end lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    
+                </div>
             </div>
             
-            <div class="navbar-end p-3">
-                <input type="text" placeholder="Search here" class="input input-ghost w-full max-w-xs bg-white rounded-full"/>
-                <i class="fa-solid fa-magnifying-glass relative -left-8"></i>
-            </div>
-          </div>
+        </div>
+
+         
+
     </header>
 
-    <main>
+    <main class="container mx-auto px-6 lg:px-20">
+        <section>
+            <div class="carousel w-full mt-14">
+                <!--        Slide-1     -->
+                <div id="slide1" class="carousel-item relative w-full rounded-lg bg-cover lg:py-40" style="background-image: url('images/banner1.png');">
+                    <div class="bg-red-500"></div>
+                    <!--        Slider-Title        -->
+                    <div class="hero-content text-white text-center m-auto py-10">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn hover:text-black bg-nav-color border-none text-white">Shop Now</button>
+                      </div>
+                    </div>
+                    <!--        Slider-1        -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-slider-fill border-none text-white hover:text-slider-fill">❮</a> 
+                        <a href="#slide2" class="btn btn-circle bg-slider-fill border-none text-white hover:text-slider-fill">❯</a>
+                    </div>         
+                </div>
+
+                <!--        Slide-2     -->
+                <div id="slide2" class="carousel-item relative w-full rounded-lg bg-cover lg:py-40" style="background-image: url('images/banner2.png');">
+                    <!--        Slider-Title        -->
+                    <div class="hero-content text-white text-center m-auto">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn bg-nav-color border-none text-white hover:text-black">Shop Now</button>
+                      </div>
+                    </div>
+                    <!--        Slider-1        -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-slider-fill border-none text-white hover:text-slider-fill">❮</a> 
+                        <a href="#slide3" class="btn btn-circle bg-slider-fill border-none text-white hover:text-slider-fill">❯</a>
+                    </div>         
+                </div>
+                 <!--        Slide-3     -->
+                <div id="slide3" class="carousel-item relative w-full rounded-lg bg-cover lg:py-40" style="background-image: url('images/banner3.png');">
+                    <!--        Slider-Title        -->
+                    <div class="hero-content text-white text-center m-auto py-10">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn bg-nav-color border-none text-white hover:text-black">Shop Now</button>
+                      </div>
+                    </div>
+                    <!--        Slider-1        -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-slider-fill border-none text-white hover:text-slider-fill">❮</a> 
+                        <a href="#slide4" class="btn btn-circle bg-slider-fill border-none text-white hover:text-slider-fill">❯</a>
+                    </div>         
+                </div>
+                <!--        Slide-4     -->
+                <div id="slide4" class="carousel-item relative w-full rounded-lg bg-cover lg:py-40" style="background-image: url('images/banner4.png');">
+                    
+                    <div class="hero-content text-white text-center m-auto py-10">
+                        <div class="max-w-md">
+                          <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                          <p class="mb-5">We supply highly quality organic products</p>
+                          <button class="btn bg-nav-color border-none text-white hover:text-black">Shop Now</button>
+                        </div>
+                      </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle bg-slider-fill border-none text-white hover:text-slider-fill">❮</a> 
+                        <a href="#slide1" class="btn btn-circle bg-slider-fill border-none text-white hover:text-slider-fill">❯</a>
+                    </div>
+                </div>
+              </div>
+          </section>
+
+          <section class="lg:flex justify-center lg:relative -top-20 drop-shadow-lg">
+                <div class="  bg-base-100 rounded-l-lg">
+                    <figure class="px-5 pt-5 flex justify-center">
+                        <img src="images/fruit1.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Grape</h2>
+                    </div>
+                </div>
+                <div class=" bg-base-100">
+                    <figure class="px-5 pt-5 flex justify-center">
+                        <img src="images/fruit2.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Orange</h2>
+                    </div>
+                </div>
+                <div class="bg-base-100">
+                    <figure class="px-5 pt-5 flex justify-center">
+                        <img src="images/fruit3.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Mango</h2>
+                    </div>
+                </div>
+                <div class="bg-base-100">
+                    <figure class="px-5 pt-5 flex justify-center">
+                        <img src="images/fruit4.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Strawberry</h2>
+                    </div>
+                </div>
+                <div class="bg-base-100 rounded-r-lg">
+                    <figure class="px-5 pt-5 flex justify-center">
+                        <img src="images/fruit5.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                         <h2 class="card-title">Pomegranate</h2>
+                    </div>
+                </div>
+          </section>
+
+          <section class="lg:flex justify-between">
+            <div class="lg:text-left text-center lg:m-0 my-10">
+                <h1 class="text-5xl font-extrabold mb-5">Deal of the day</h1>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+
+            <div class="">
+                <div class="grid grid-flow-col gap-5 text-center justify-center auto-cols-max">
+                    <div class="flex flex-col">
+                      <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:29;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+            </div>
+          </section>
 
     </main>
 
