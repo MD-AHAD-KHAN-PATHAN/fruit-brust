@@ -44,12 +44,13 @@
 
 </head>
 <body class="font-lato">
-    <header class="container mx-auto px-6 lg:px-20 lg:mt-14 mt-4">
+    <header class="container mx-auto px-6 md:px-16 md:mt-14 lg:px-20 lg:mt-14 mt-4">
         <!-----        Navbar      ----->
-        <div class="navbar lg:bg-nav-color rounded-full">
+        <div class="navbar lg:bg-nav-color md:bg-nav-color rounded-full">
              <!-----        Navbar start      ----->
-            <div class="navbar-start hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 lg:text-white font-medium">
+            <div class="navbar-start hidden lg:flex md:flex">
+
+                <ul class="menu menu-horizontal px-1 lg:text-white md:text-white font-bold">
                   <li><a>Home</a></li>
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
@@ -60,20 +61,20 @@
              <!-----        Navbar center      ----->
             <div class="navbar-center">
               <img src="images/logo.png" alt="">
-              <a class="btn btn-ghost normal-case text-xl lg:text-white">Fruit Burst</a>
+              <a class="btn btn-ghost normal-case text-xl lg:text-white md:text-white">Fruit Burst</a>
             </div>
             
 
              <!-----        Navbar end      ----->
             <div class="navbar-end">
               
-              <div class="hidden lg:block py-3">
+              <div class="hidden lg:block md:block py-3">
                   <input type="text" placeholder="Search here" class="px-8 input input-ghost w-full max-w-xs bg-white rounded-full"/>
               </div>
 
-              <i class="fa-solid fa-magnifying-glass lg:block hidden relative -left-8"></i>
+              <i class="fa-solid fa-magnifying-glass lg:block md:block hidden relative -left-8"></i>
                 
-                <div class="dropdown navbar-end lg:hidden">
+                <div class="dropdown navbar-end lg:hidden md:hidden">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
@@ -92,7 +93,7 @@
 
     </header>
 
-    <main class="container mx-auto px-6 lg:px-20">
+    <main class="container mx-auto px-6 lg:px-20 md:px-16">
 
         <!--        Slider Section      -->
         <section>
@@ -169,7 +170,7 @@
 
            <!-----        Fruits Section        ----->
 
-          <section class="lg:flex justify-center lg:relative -top-20 drop-shadow-lg">
+          <section class="lg:flex justify-center lg:relative -top-20 drop-shadow-lg hidden">
                 <div class="  bg-base-100 lg:rounded-l-lg">
                     <figure class="px-5 pt-5 flex justify-center">
                         <img src="images/fruit1.png" alt="Shoes" class="" />
@@ -178,7 +179,7 @@
                         <h2 class="card-title">Grape</h2>
                     </div>
                 </div>
-                <div class=" bg-base-100">
+                <div class=" bg-base-100 ">
                     <figure class="px-5 pt-5 flex justify-center">
                         <img src="images/fruit2.png" alt="Shoes" class="" />
                     </figure>
@@ -255,13 +256,14 @@
 
            <!-----        Fruits Card Section        ----->
 
-          <section class="grid lg:grid-cols-4 grid-rows-1 gap-6">
-            <div class="card bg-base-100 shadow-xl">
+          <section class="grid lg:grid-cols-4 grid-rows-1 gap-6 md:grid-cols-2">
+            <div class="card bg-base-100 shadow-xl border-2">
                 <figure class="px-10 pt-10">
                   <img src="images/fruit6.png" alt="Shoes" class="rounded-xl"/>
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <div class="border-2 border-gray-200 w-full"></div>
                   <p>Apples</p>
                   <div class="rating mb-5">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -304,12 +306,13 @@
                   </div>
                 </div>
               </div>
-              <div class="card bg-base-100 shadow-xl">
+              <div class="card bg-base-100 shadow-xl border-2">
                 <figure class="px-10 pt-10">
                   <img src="images/fruit7.png" alt="Shoes" class="rounded-xl"/>
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <div class="border-2 border-gray-200 w-full"></div>
                   <p>Orange</p>
                   <div class="rating mb-5">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -351,12 +354,13 @@
                   </div>
                 </div>
               </div>
-              <div class="card bg-base-100 shadow-xl">
+              <div class="card bg-base-100 shadow-xl border-2">
                 <figure class="px-10 pt-10">
                   <img src="images/fruit8.png" alt="Shoes" class="rounded-xl"/>
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <div class="border-2 border-gray-200 w-full"></div>
                   <p>Red Dragon</p>
                   <div class="rating mb-5">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -398,12 +402,13 @@
                   </div>
                 </div>
               </div>
-              <div class="card bg-base-100 shadow-xl">
+              <div class="card bg-base-100 shadow-xl border-2">
                 <figure class="px-10 pt-10">
                   <img src="images/fruit9.png" alt="Shoes" class="rounded-xl"/>
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <div class="border-2 border-gray-200 w-full"></div>
                   <p>Banana</p>
                   <div class="rating mb-5">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -457,11 +462,11 @@
           <section>
             <div class="bg-cover rounded-lg" style="background-image: url('images/banner1.png');">
                 <div class="hero-overlay bg-opacity-30"></div>
-                <div class="text-center text-white pt-28 px-6">
+                <div class="text-center text-white pt-28 px-6 md:px-24">
                     <h1 class="text-3xl lg:text-5xl  mb-6 font-extrabold">Meet the team</h1>
                     <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
-                <div class="grid lg:grid-cols-4 grid-rows-1 gap-6 lg:px-24 pb-20 mt-12">
+                <div class="grid lg:grid-cols-4 grid-rows-1 gap-6 lg:px-24 pb-20 mt-12 md:grid-cols-2">
                     <div class="card">
                         <figure class="px-10 pt-10">
                           <img src="images/member1.png" alt="Shoes" class="rounded-xl" />
@@ -531,32 +536,32 @@
             </div>
 
             <div class="grid lg:grid-cols-3 grid-rows-1 gap-8 mb-28">
-                <div class="text-center lg:text-left">
-                    <div class="lg:flex">
+                <div class="text-center lg:text-left md:text-left">
+                    <div class="lg:flex md:flex">
                         <div class="mr-5 mb-4"><i class="fa-solid fa-people-group rounded-full bg-slate-300 p-4"></i></div>
                         <div>
                             <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
-                           <div class="flex justify-center lg:justify-start my-2">
+                           <div class="flex justify-center lg:justify-start md:justify-start my-2">
                                 <div class="w-1/3 border-gray-500 border-2"></div>
                            </div>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="lg:flex">
+                    <div class="lg:flex md:flex">
                         <div class="mr-5 mt-4"><i class="fa-solid fa-heart-circle-plus rounded-full bg-slate-300 p-4"></i></i></div>
                         <div>
                             <h3 class="text-2xl font-extrabold mt-4">Fresh is Best</h3>
-                            <div class="flex justify-center lg:justify-start my-2">
+                            <div class="flex justify-center lg:justify-start md:justify-start my-2">
                                 <div class="w-1/3 border-gray-500 border-2"></div>
                             </div>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="lg:flex">
+                    <div class="lg:flex md:flex">
                         <div class="mr-5 mt-4"><i class="fa-solid fa-hand-holding-heart rounded-full bg-slate-300 p-4"></i></div>
                         <div>
                             <h3 class="text-2xl font-extrabold mt-4">Gift Certificates</h3>
-                            <div class="flex justify-center lg:justify-start my-2">
+                            <div class="flex justify-center lg:justify-start md:justify-start my-2">
                                 <div class="w-1/3 border-gray-500 border-2"></div>
                             </div>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
@@ -564,33 +569,33 @@
                     </div>
                 </div>
                
-                <div> <img src="images/whychoose1.png" alt=""></div>
-                <div class="text-center lg:text-right">
-                    <div class="lg:flex lg:flex-row-reverse lg:text-right">
-                        <div class="lg:ml-4 mb-4"><i class="fa-solid fa-boxes-packing rounded-full bg-slate-300 p-4"></i></div>
-                        <div class="lg:text-right">
+                <div class="md:flex md:justify-center"> <img src="images/whychoose1.png" alt=""></div>
+                <div class="text-center lg:text-right md:text-right">
+                    <div class="lg:flex lg:flex-row-reverse md:flex md:flex-row-reverse lg:text-right md:text-right">
+                        <div class="lg:ml-4 md:ml-4 mb-4"><i class="fa-solid fa-boxes-packing rounded-full bg-slate-300 p-4"></i></div>
+                        <div class="lg:text-right md:text-right">
                             <h3 class="text-2xl font-extrabold">Integrated Supplier</h3>
-                            <div class="flex justify-center lg:justify-end my-2">
+                            <div class="flex justify-center lg:justify-end md:justify-end my-2">
                                 <div class="w-1/3 border-gray-500 border-2"></div>
                            </div>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="lg:flex lg:flex-row-reverse">
-                        <div class="lg:ml-4 mt-4"><i class="fa-solid fa-person-breastfeeding rounded-full bg-slate-300 p-4"></i></div>
+                    <div class="lg:flex lg:flex-row-reverse md:flex md:flex-row-reverse">
+                        <div class="lg:ml-4 md:ml-4 mt-4"><i class="fa-solid fa-person-breastfeeding rounded-full bg-slate-300 p-4"></i></div>
                         <div class="lg:text-right">
                             <h3 class="text-2xl font-extrabold mt-4">Sustainable Practice</h3>
-                            <div class="flex justify-center lg:justify-end my-2">
+                            <div class="flex justify-center lg:justify-end md:justify-end my-2">
                                 <div class="w-1/3 border-gray-500 border-2"></div>
                            </div>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="lg:flex lg:flex-row-reverse">
-                        <div class="lg:ml-4 mt-4"><i class="fa-regular fa-thumbs-up rounded-full bg-slate-300 p-4"></i></div>
+                    <div class="lg:flex lg:flex-row-reverse md:flex md:flex-row-reverse">
+                        <div class="lg:ml-4 md:ml-4 mt-4"><i class="fa-regular fa-thumbs-up rounded-full bg-slate-300 p-4"></i></div>
                         <div>
                             <h3 class="text-2xl font-extrabold mt-4">The Benefits Only</h3>
-                            <div class="flex justify-center lg:justify-end my-2">
+                            <div class="flex justify-center lg:justify-end md:justify-end my-2">
                                 <div class="w-1/3 border-gray-500 border-2"></div>
                            </div>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
